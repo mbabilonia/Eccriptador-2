@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./encriptador1-celular.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="encriptador-1-celular">
+      <header class="header">
+        <div class="bg"></div>
+        <div class="actions">
+          <div class="menu2">
+            <div class="list2">
+              <img class="page-icon4" alt="" src="./public/page-icon.svg" />
+
+              <img class="page-icon4" alt="" src="./public/page-icon-1.svg" />
+            </div>
+          </div>
+          <div class="menu2">
+            <div class="list3">
+              <div class="page-icon6">
+                <div class="page-icon-inner"></div>
+                <div class="pt1">PT</div>
+              </div>
+              <div class="page-icon7">
+                <div class="ellipse-div"></div>
+                <div class="pt1">ES</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top">
+          <img
+            class="vector-icon"
+            loading="lazy"
+            alt=""
+            src="./public/vector1.svg"
+          />
+
+          <div class="rectangle-group">
+            <div class="frame-item"></div>
+            <div class="rectangle-container">
+              <div class="frame-inner"></div>
+              <div class="rectangle-div"></div>
+              <div class="frame-child1"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="encriptador-1-celular-inner">
+        <section class="frame-parent">
+          <div class="ingrese-el-texto-aqui-wrapper">
+            <h1 class="ingrese-el-texto" id="ingreseElTexto">
+              Ingrese el texto aqui
+            </h1>
+          </div>
+          <div class="frame-group">
+            <div class="encrypt-button-container-parent">
+              <div class="encrypt-button-container">
+                <div class="encrypt-button-content">
+                  <img
+                    class="biexclamation-circle-fill-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="./public/biexclamationcirclefill.svg"
+                  />
+                </div>
+                <div class="solo-letras-minsculas1">
+                  Solo letras minúsculas y sin acentos
+                </div>
+              </div>
+              <button class="button6">
+                <div class="button7">Encriptar</div>
+              </button>
+            </div>
+            <button class="button8">
+              <div class="button9">Desencriptar</div>
+            </button>
+          </div>
+          <div class="frame-wrapper">
+            <div class="ningn-mensaje-fue-encontrado-parent">
+              <h3 class="ningn-mensaje-fue">Ningún mensaje fue encontrado</h3>
+              <div class="ingresa-el-texto">
+                Ingresa el texto que desees encriptar o desencriptar.
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      var ingreseElTexto = document.getElementById("ingreseElTexto");
+      if (ingreseElTexto) {
+        ingreseElTexto.addEventListener("click", function (e) {
+          window.location.href = "./encriptador2-celular.html";
+        });
+      }
+    </script>
+  </body>
+</html>
